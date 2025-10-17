@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>novaklar - Artista Oficial</title>
+    <style>
+/* ---------------------------------------------------------------------- */
+/* INICIO DE CÓDIGO CSS (Color de Acento: Azul Eléctrico)                 */
+/* ---------------------------------------------------------------------- */
+
+/* Variables CSS para fácil edición de colores */
+:root {
+    --color-dark-bg: #121212;
+    --color-light-text: #EAEAEA;
+    --color-accent: #00FFFF; /* AZUL ELÉCTRICO/CIAN */
+    --color-accent-hover: #50F7F7;
+    --color-secondary: #333333;
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+/* Fuente moderna de Google Fonts, como Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* Base y Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-dark-bg);
+    color: var(--color-light-text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo del Encabezado (Header) */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    /* MEJORA: INVERTIR COLOR para que el logo oscuro destaque */
+    filter: invert(100%) saturate(100%); 
+}
+
+.artist-name {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+/* Contenido Principal (Main) */
+.main-content {
+    flex-grow: 1;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Sección Principal (Hero) */
+.hero-section {
+    padding: 60px 20px;
+    background: var(--color-secondary);
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.artist-bio { /* Estilo para la biografía */
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-style: italic;
+    color: #A0A0A0;
+    line-height: 1.8;
+    padding: 0 15px;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #b3b3b3;
+}
+
+/* Botón de Spotify */
+.spotify-link {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-dark-bg);
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.spotify-link:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+}
+
+/* Información del Track */
+.track-info {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.track-info h3 {
+    margin-bottom: 15px;
+    color: var(--color-light-text);
+    font-size: 1.2em;
+}
+
+.track-info ul {
+    list-style: none;
+    text-align: left;
+}
+
+.track-info li {
+    margin-bottom: 8px;
+}
+
+.label {
+    color: var(--color-accent);
+    margin-right: 5px;
+}
+
+/* Sección de Contacto */
+.contact-section {
+    padding: 40px 20px;
+    border-top: 1px solid var(--color-secondary);
+}
+
+.contact-section h2 {
+    margin-bottom: 15px;
+}
+
+.email-display {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.email-display a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email-display a:hover {
+    color: var(--color-light-text);
+}
+
+
+/* Pie de Página (Footer) */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid var(--color-secondary);
+    color: #888;
+    margin-top: auto;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+    .artist-name {
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .hero-section {
+        padding: 40px 15px;
+    }
+    
+    .spotify-link {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+/* FIN DE CÓDIGO CSS                                                      */
+/* ---------------------------------------------------------------------- */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://raw.githubusercontent.com/novaklar/web/refs/heads/main/novaklar1.svg" alt="novaklar logo" class="logo">
+        <h1 class="artist-name">novaklar</h1>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            
+            <p class="artist-bio">
+                novaklar es un artista independiente que fusiona paisajes sonoros atmosféricos con ritmos electrónicos minimalistas. Centrado en la creación de ambientes inmersivos, su trabajo se distingue por una producción pulcra y una búsqueda constante de la profundidad emocional dentro de la música chill y deep house.
+            </p>
+            
+            <p class="tagline">Música Electrónica y Atmosférica</p>
+            <h2 class="title">Primer Lanzamiento: "sebastian"</h2>
+            <p class="description">Sumérgete en el sonido del debut oficial de novaklar. Disponible en todas las plataformas.</p>
+
+            <a href="https://open.spotify.com/track/1jsYeZeuRChwwoSb5l3UTo?si=7IpOuWd3TVma8gx40MWnDQ" target="_blank" class="spotify-link">
+                Escuchar en Spotify 🎧
+            </a>
+
+            <div class="track-info">
+                <h3>Detalles Técnicos para Reclamación</h3>
+                <ul>
+                    <li><strong class="label">ID de Canción:</strong> 5980096</li>
+                    <li><strong class="label">ISRC:</strong> QZN882511154</li>
+                    <li><strong class="label">Distribuidora:</strong> draikotune</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contacto y Negocios</h2>
+            <p>Para consultas sobre el artista, distribución o reclamo de perfil:</p>
+            <p class="email-display">📧 <a href="mailto:novaklarcompany@gmail.com">novaklarcompany@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 novaklar. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+/* ---------------------------------------------------------------------- */
+/* INICIO DE CÓDIGO JS (Sin cambios)                                      */
+/* ---------------------------------------------------------------------- */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const heroSection = document.querySelector('.hero-section');
+    
+    // Función para un efecto sutil de "resplandor" en el fondo
+    function subtlePulse() {
+        const initialColor = '#333333'; 
+        const pulseColor = '#3a3a3a';
+        
+        heroSection.style.transition = 'background-color 2s ease-in-out';
+        
+        // Pulso suave: Cambia de color
+        setTimeout(() => {
+            heroSection.style.backgroundColor = pulseColor;
+        }, 1000); 
+        
+        // Retorno al color original
+        setTimeout(() => {
+            heroSection.style.backgroundColor = initialColor;
+        }, 3000); 
+    }
+
+    // Ejecutar el pulso cada 5 segundos
+    setInterval(subtlePulse, 5000); 
+    
+    // Iniciar el efecto inmediatamente
+    subtlePulse();
+});
+
+/* ---------------------------------------------------------------------- */
+/* FIN DE CÓDIGO JS                                                       */
+/* ---------------------------------------------------------------------- */
+    </script>
+</body>
+</html>
